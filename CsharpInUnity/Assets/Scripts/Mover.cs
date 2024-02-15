@@ -1,8 +1,7 @@
 using UnityEngine;
 
-public class Sphere : MonoBehaviour
+public class Mover : MonoBehaviour
 {
-    [SerializeField] private Vector3 _offset;
     [SerializeField] private float _speed;
 
     private void Update()
@@ -12,6 +11,6 @@ public class Sphere : MonoBehaviour
 
     private void Move()
     {
-        transform.Translate(_offset * _speed * Time.deltaTime);
+        transform.Translate( _speed * Time.deltaTime * Vector3.forward);
     }
 }
