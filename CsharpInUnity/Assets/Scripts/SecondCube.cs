@@ -20,6 +20,7 @@ public class SecondCube : MonoBehaviour
 
     private void Rotate()
     {
+        //test Commit for GitHub
         transform.RotateAround(transform.position, transform.up, 0.01f);
     }
 
